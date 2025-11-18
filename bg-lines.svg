@@ -1,0 +1,81 @@
+<svg
+  viewBox="0 0 2000 700"
+  xmlns="http://www.w3.org/2000/svg"
+  width="100%"
+  height="auto"
+  role="img"
+  aria-hidden="true"
+>
+  <defs>
+    <!-- Sfondo -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Gradiente linee -->
+    <linearGradient id="line" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="15%" stop-color="#eab308" />
+      <stop offset="70%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#ffe88a" />
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="soft-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sfondo bianco -->
+  <rect width="2000" height="700" fill="url(#bg)" />
+
+  <!-- FASCIO PIÙ INTENSO, SPOSTATO PIÙ A DESTRA -->
+  <g
+    transform="translate(2300, 0) scale(-1, 1)"
+    filter="url(#soft-glow)"
+    fill="none"
+    stroke="url(#line)"
+    stroke-width="2.4"
+    opacity="0.70"
+  >
+    <path d="M 1550 -200 C 1300 50, 1050 280, 820 900" opacity="0.45" />
+    <path d="M 1500 -190 C 1270 60, 1030 290, 800 900" opacity="0.50" />
+    <path d="M 1450 -180 C 1240 70, 1000 300, 780 900" opacity="0.55" />
+    <path d="M 1400 -170 C 1210 80, 970 310, 760 900" opacity="0.60" />
+    <path d="M 1350 -160 C 1180 90, 940 320, 740 900" opacity="0.65" />
+    <path d="M 1300 -150 C 1150 100, 910 330, 720 900" opacity="0.70" />
+    <path d="M 1250 -140 C 1120 110, 880 340, 700 900" opacity="0.75" />
+    <path d="M 1200 -130 C 1090 120, 850 350, 680 900" opacity="0.80" />
+    <path d="M 1150 -120 C 1060 130, 820 360, 660 900" opacity="0.85" />
+    <path d="M 1100 -110 C 1020 140, 790 370, 640 900" opacity="0.80" />
+    <path d="M 1050 -105 C 980 150, 760 380, 620 900" opacity="0.75" />
+    <path d="M 1000 -100 C 940 160, 730 390, 600 900" opacity="0.68" />
+    <path d="M 950 -90  C 900 170, 700 400, 580 900" opacity="0.62" />
+    <path d="M 900 -80  C 860 180, 670 410, 560 900" opacity="0.55" />
+    <path d="M 850 -70  C 820 190, 640 420, 540 900" opacity="0.50" />
+    <path d="M 800 -60  C 780 200, 610 430, 520 900" opacity="0.45" />
+    <path d="M 750 -50  C 740 210, 580 440, 500 900" opacity="0.40" />
+    <path d="M 700 -40  C 700 220, 550 450, 480 900" opacity="0.35" />
+    <path d="M 650 -30  C 660 230, 520 460, 460 900" opacity="0.32" />
+    <path d="M 600 -20  C 620 240, 490 470, 440 900" opacity="0.30" />
+  </g>
+
+  <!-- Puntini -->
+  <g
+    transform="translate(2300, 0) scale(-1, 1)"
+    fill="#facc15"
+    opacity="0.55"
+  >
+    <circle cx="880" cy="210" r="3" />
+    <circle cx="760" cy="300" r="3" />
+    <circle cx="680" cy="410" r="3" />
+    <circle cx="820" cy="520" r="3" />
+    <circle cx="1000" cy="330" r="3" />
+    <circle cx="1100" cy="250" r="3" />
+  </g>
+</svg>
